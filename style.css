@@ -1,0 +1,115 @@
+body {
+  background-color: #0f0f0f;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  body {
+    width: 90%;
+  }
+}
+
+p {
+  color: lightblue;
+}
+
+@media (max-width: 1000px) {
+  .album {
+    display: none;
+  }
+}
+.contact {
+  border: 1px lightsteelblue solid;
+  background: #232323;
+  color: lightsteelblue;
+  margin-bottom: 20px;
+}
+
+.base-show h2, .artists h2, .games h2 {
+  color: #cdcdcd;
+  padding-top: 5px;
+}
+.base-show img:first-child, .artists img:first-child, .games img:first-child {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.games img {
+  margin: 15px 0;
+  max-width: 100%;
+}
+.games p {
+  margin-top: 10px;
+}
+
+.artists img {
+  width: 128px;
+  height: 128px;
+  margin: 10px 0;
+  border-radius: 50%;
+}
+
+.music .table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+#about p {
+  text-indent: 30px;
+  font-size: large;
+}
+
+.title h2 {
+  font-weight: lighter;
+  margin: 40px auto;
+  color: cornflowerblue;
+}
+.title h3 {
+  font-weight: lighter;
+  margin: 20px auto;
+  color: cadetblue;
+}
+
+nav ul {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px #dcdcdc solid;
+  border-radius: 10px;
+  background: #3c5a78;
+}
+nav ul li:hover {
+  background: #32506e;
+  border-radius: 10px;
+}
+nav ul li a {
+  color: whitesmoke;
+  font-weight: lighter;
+}
+nav ul li a:hover {
+  color: lightgray;
+  font-weight: lighter;
+}
+
+header {
+  text-align: center;
+  border: 1px #dcdcdc solid;
+  border-radius: 10px;
+  margin: 20px auto 50px auto;
+  padding: 30px;
+  background: #232323;
+}
+header h1 {
+  color: cornflowerblue;
+  font-weight: lighter;
+  font-style: normal;
+}
+header h5 {
+  color: lightsteelblue;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=style.css.map */
