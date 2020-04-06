@@ -1,0 +1,150 @@
+$weight: lighter;
+$style: normal;
+$border: #dcdcdc;
+$radius: 10px;
+$tab: 30px;
+
+body {
+  background-color: #0f0f0f;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  color: lightblue;
+}
+
+@media (max-width: 1000px) {
+  .album {
+    display: none;
+  }
+}
+
+.contact {
+  border: 1px lightsteelblue solid;
+  background: #232323;
+  color: lightsteelblue;
+  margin-bottom: 20px;
+}
+
+.base-show {
+  h2 {
+    color: #cdcdcd;
+    padding-top: 5px;
+  }
+
+  img:first-child {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.games {
+  @extend .base-show;
+
+  img {
+    margin: 15px 0;
+    max-width: 100%;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+.artists {
+  @extend .base-show;
+
+  img {
+    width: 128px;
+    height: 128px;
+    margin: 10px 0;
+    border-radius: 50%;
+  }
+}
+
+.music {
+  .table {
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      opacity: 0.85;
+    }
+  }
+}
+
+#about {
+  p {
+    text-indent: $tab;
+    font-size: large;
+  }
+}
+
+.title {
+  h2 {
+    font-weight: $weight;
+    margin: 40px auto;
+    color: cornflowerblue;
+  }
+
+  h3 {
+    font-weight: $weight;
+    margin: 20px auto;
+    color: cadetblue;
+  }
+}
+
+nav {
+  ul {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px $border solid;
+    border-radius: $radius;
+    background: #3c5a78;
+
+    li:hover {
+      background: #32506e;
+      border-radius: $radius;
+    }
+
+    li {
+      a {
+        color: whitesmoke;
+        font-weight: $weight;
+      }
+
+      a:hover {
+        color: lightgray;
+        font-weight: $weight;
+      }
+    }
+  }
+}
+
+header {
+  text-align: center;
+  border: 1px $border solid;
+  border-radius: 10px;
+  margin: 20px auto 50px auto;
+  padding: 30px;
+  background: #232323;
+
+  h1 {
+    color: cornflowerblue;
+    font-weight: $weight;
+    font-style: $style;
+  }
+
+  h5 {
+    color: lightsteelblue;
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
